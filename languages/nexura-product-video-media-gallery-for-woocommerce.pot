@@ -1,0 +1,1025 @@
+# Copyright (C) 2026 Prokash Sarker
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nexura Product Video Media Gallery for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nexura-product-video-media-gallery-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-01 10:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Prokash Sarker POT Maker\n"
+"X-Domain: nexura-product-video-media-gallery-for-woocommerce\n"
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:30
+msgid "Product Video Gallery Settings"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:31
+msgid "Video Gallery"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:214
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:267
+msgid "Product Video Gallery for WooCommerce"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:270
+msgid "PRO Active"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:272
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:766
+msgid "Free Edition"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:275
+msgid "Configure your gallery layout, image magnifier, video showcase, and mobile shopping experience."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:280
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:254
+msgid "Upgrade to Pro ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:292
+msgid "âš¡ Supercharge Your Store with Pro"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:293
+msgid "Unlock Unlimited Videos, Vimeo, Self-Hosted MP4, TikTok 9:16 Vertical Reels, Amazon-Style Side Window Zoom & Video SEO Schema."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:296
+msgid "Unlock All Pro Features ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:303
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:324
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:274
+msgid "Gallery Layout"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:304
+msgid "Zoom & Magnifier ðŸ”"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:305
+msgid "Video Options"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:306
+msgid "Mobile & Touch ðŸ“±"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:307
+msgid "Free vs Pro ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:318
+msgid "Gallery Layout & Display"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:319
+msgid "Select the primary gallery presentation format, aspect ratio, and thumbnail display."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:328
+msgid "Free Gallery Layouts"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:329
+msgid "Vertical Left (Thumbnails on Left) - Recommended"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:330
+msgid "Horizontal (Thumbnails at Bottom)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:332
+msgid "Pro Premium Layouts"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:333
+msgid "Vertical Right (Thumbnails on Right) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:334
+msgid "Mosaic Grid (2 - 1 - 2 - 1 Alternating Pattern) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:335
+msgid "2-Column Grid (Hero + 2-Col Grid) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:336
+msgid "1-Column Stacked Grid [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:339
+msgid "Choose how thumbnails and the main image appear on your product page."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:344
+msgid "Gallery Aspect Ratio"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:348
+msgid "Standard Aspect Ratios (Free)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:349
+msgid "4:5 Portrait (Standard eCommerce - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:350
+msgid "1:1 Square (Modern / Instagram)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:352
+msgid "Pro Aspect Ratios"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:353
+msgid "16:9 Widescreen (Landscape) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:354
+msgid "9:16 Vertical Reels / TikTok (Full Smartphone Vertical) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:357
+msgid "Select 9:16 for modern TikTok / Instagram Reels vertical video showcasing."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:362
+msgid "Thumbnails in Viewport"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:366
+msgid "Number of thumbnails visible at once before scrolling/sliding (default: 4)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:370
+msgid "Autoplay Slider"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:374
+msgid "Enable automatic image slide transition"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:380
+msgid "Slider Rotation Delay"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:384
+msgid "seconds"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:385
+msgid "Seconds between automatic slide transitions (Default: 3.5 seconds)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:389
+msgid "Slider Nav Arrow Colors"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:393
+msgid "Arrow Icon Color"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:397
+msgid "Background Color"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:412
+msgid "Image Magnifier & Zoom Engine"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:413
+msgid "Configure high-resolution image inspection: Inner Pan-Zoom, Magnifying Lens, or Amazon-Style Side Window."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:417
+msgid "Enable Image Zoom"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:421
+msgid "Enable interactive image magnification on product images"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:423
+msgid "Allows customers to inspect fine fabric, textures, and details."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:428
+msgid "Magnifier Mode"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:432
+msgid "Inner Zoom (Smooth Pan-Zoom inside image box - Clean & Minimal) [FREE]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:433
+msgid "Lens Zoom (Magnifying Glass Lens follows cursor - Great for Jewelry & Watches) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:434
+msgid "Side Window Zoom (Amazon-Style separate high-res popup window) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:436
+msgid "Inner Zoom is included in Free. Lens & Side Window zooms are unlocked with Pro."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:441
+msgid "Zoom Magnification Level"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:446
+msgid "Magnification factor for zoom (Default: 2.2x). Recommended: 2.0x to 3.0x."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:451
+msgid "Zoom Trigger Action"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:455
+msgid "Mouse Hover & Click to Zoom (Both Enabled)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:456
+msgid "Mouse Hover Only (Move mouse over image to inspect)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:457
+msgid "Click to Zoom Only (Click image/icon to toggle zoom in & out)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:466
+msgid "Lens Shape"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:472
+msgid "Circular Lens (Classic round magnifying glass)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:473
+msgid "Square Lens (Modern square inspection box)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:480
+msgid "Lens Size (Diameter)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:487
+msgid "Width & height of the lens in pixels (Default: 180px)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:495
+msgid "Side Window Position"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:501
+msgid "Right Side (Amazon Standard - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:502
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:573
+msgid "Left Side"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:509
+msgid "Side Window Width"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:521
+msgid "Side Window Height"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:535
+msgid "Fullscreen Lightbox Modal (Etsy-Style Split View)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:538
+msgid "Fullscreen Lightbox"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:542
+msgid "Enable fullscreen modal popup on image click or zoom trigger"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:549
+msgid "Lightbox Photo Pattern"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:555
+msgid "Mosaic Grid (2 - 1 - 2 - 1 Alternating Pattern)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:556
+msgid "2-Column Grid (2 - 2 - 2 Pattern)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:557
+msgid "1-Column Stacked (1 - 1 - 1 Pattern)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:558
+msgid "Hero Top + 2-Column Grid (1 - 2 - 2 Pattern)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:560
+msgid "Choose the photo gallery grid pattern in the zoom lightbox side panel."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:566
+msgid "Lightbox Panel Position"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:572
+msgid "Right Side (Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:586
+msgid "Video Playback & Placement"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:587
+msgid "Configure video playback, display position in gallery, audio defaults, and rich SEO snippets."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:592
+msgid "Video Display Position"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:596
+msgid "Free Placement Positions"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:597
+msgid "2nd Position (After Featured Image - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:598
+msgid "1st Position (Show Video First)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:600
+msgid "Pro Positions"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:601
+msgid "3rd Position (After 2nd Image) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:602
+msgid "Last Position (At End of All Photos) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:605
+msgid "Choose which slide position the video appears in relative to product photos."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:610
+msgid "Autoplay Video on Click"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:614
+msgid "Disabled (Off - Click play button on video)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:615
+msgid "Enabled (On - Autoplay immediately when selected)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:621
+msgid "Initial Video Audio"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:625
+msgid "Sound On (Browser fallback to Muted if blocked)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:626
+msgid "Always Start Muted (Recommended for silent preview)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:628
+msgid "Browsers may require muted audio for automatic video playback."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:634
+msgid "Loop Video Playback"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:640
+msgid "Disabled (Play once & stop)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:641
+msgid "Enabled (Loop continuously)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:643
+msgid "Continuously repeat product videos once they finish playing."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:648
+msgid "Video SEO Schema"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:654
+msgid "Automatically generate Schema.org VideoObject JSON-LD for Google Search ranking"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:667
+msgid "Mobile & Touch Responsiveness"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:668
+msgid "Fine-tune mobile layout formats, swipe behaviors, and touch safeguards."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:673
+msgid "Mobile Gallery Layout"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:677
+msgid "Free Mobile Layouts"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:678
+msgid "Horizontal Thumbnails at Bottom (Default - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:679
+msgid "Keep Desktop Layout (Do not reorder thumbnails)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:681
+msgid "Pro Native Mobile Mode"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:682
+msgid "Dots Only (Hide Thumbnails on Mobile, Show Swipe Dots Only) [PRO ðŸ”’]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:685
+msgid "\"Dots Only\" provides a clean, native shopping app look similar to modern luxury brands."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:690
+msgid "Mobile Breakpoint (px)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:694
+msgid "Screen width in pixels where mobile optimizations trigger (default: 768px for tablet/mobile)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:699
+msgid "Mobile Image Zoom"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:703
+msgid "Disable Pan-Zoom on Mobile (Prevents Accidental Zooming While Scrolling - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:704
+msgid "Enable Touch Pan-Zoom on Mobile"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:706
+msgid "Disabling on-page pan-zoom on mobile allows natural page scrolling. Customers can still tap to view the full resolution in the Fullscreen Lightbox."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:712
+msgid "Mobile Thumbnails to Show"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:718
+msgid "Number of thumbnails visible at once in the mobile bottom strip (default: 4)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:724
+msgid "Mobile Nav Arrows"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:730
+msgid "Show Prev / Next Arrows on Mobile"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:731
+msgid "Hide Arrows on Mobile (Clean Swipe UI - Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:738
+msgid "Mobile Pagination Dots"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:744
+msgid "Show Pagination Dots on Mobile (Recommended)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:745
+msgid "Hide Pagination Dots on Mobile"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:758
+msgid "Free vs Pro Feature Comparison"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:759
+msgid "See what is included in your Free plan and discover all the high-converting features waiting for you in Pro."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:765
+msgid "Feature / Capability"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:767
+msgid "PRO Edition ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:772
+msgid "Videos per Product"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:773
+msgid "1 Video"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:774
+msgid "Unlimited Videos"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:777
+msgid "YouTube Video Support"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:782
+msgid "Vimeo & Self-Hosted MP4 / WebM"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:787
+msgid "Variation-Specific Videos (Color/Size)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:792
+msgid "Custom Video Cover / Thumbnail"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:797
+msgid "Gallery Carousel (Vertical Left & Bottom)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:802
+msgid "Vertical Right & Mosaic 2-1-2-1 Grid"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:807
+msgid "2-Column Hero & 1-Column Stacked Grid"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:812
+msgid "Aspect Ratios (1:1 Square & 4:5 Portrait)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:817
+msgid "TikTok / Reels 9:16 Vertical Video Mode"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:822
+msgid "Inner Pan-Zoom Magnifier"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:827
+msgid "Magnifying Glass Lens Zoom (Circle / Square)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:832
+msgid "Side Window Zoom (Amazon / Flipkart Style)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:837
+msgid "Mobile Touch Scrolling Safeguard"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:842
+msgid "Mobile \"Dots Only\" Native App Mode"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:847
+msgid "Video Loop Playback Continuously"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:852
+msgid "Google Video SEO Schema (JSON-LD)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:857
+msgid "Technical Support"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:858
+msgid "Community Forum"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:859
+msgid "Priority VIP Direct Support"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:868
+msgid "Ready to upgrade your store?"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:869
+msgid "Join hundreds of thriving stores boosting sales with high-converting video showcases and advanced magnifiers."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:871
+msgid "14-Day Money Back Guarantee"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:872
+msgid "Instant License Activation"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:873
+msgid "Priority Support"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:878
+msgid "Upgrade to Pro Now ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-admin-settings.php:886
+msgid "Save Changes"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:40
+msgid "Product Video Gallery"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:149
+msgid "Product Videos"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:153
+msgid "Custom Gallery Style"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:154
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:541
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:558
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:573
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:610
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:631
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:650
+msgid "PRO"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:161
+msgid "Add video links (YouTube, Vimeo, Self-hosted MP4) to display alongside your product images."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:179
+msgid "Video #%d"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:182
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:212
+msgid "Remove"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:185
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:483
+msgid "Video Source"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:188
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:485
+msgid "YouTube"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:189
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:486
+msgid "Vimeo"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:190
+msgid "Self-Hosted (MP4 / WebM)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:191
+msgid "Custom Embed / Iframe"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:196
+msgid "Video URL / Embed"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:200
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:494
+msgid "Select from Media Library"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:206
+msgid "Custom Thumbnail"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:211
+msgid "Choose Image"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:230
+msgid "Add Video"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:235
+msgid "Free edition supports 1 YouTube video."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:237
+msgid "Upgrade to Pro for Unlimited Videos, Vimeo & MP4 ðŸš€"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:248
+msgid "Customize layout, aspect ratio, zoom style, and video position specifically for this individual product. Overrides global settings and category rules."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:253
+msgid "Pro Exclusive Feature:"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:253
+msgid "Per-product custom gallery styling requires Product Video Showcase PRO."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:260
+msgid "Gallery Style Source"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:261
+msgid "Choose whether this product follows global settings or uses custom style."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:265
+msgid "Use Global / Category Settings (Default)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:266
+msgid "Override with Custom Settings for this Product [PRO]"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:275
+msgid "Override slider/grid presentation for this product."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:279
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:297
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:313
+msgid "Default (Inherit Global / Category)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:280
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:545
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:616
+msgid "Vertical Thumbnails (Left)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:281
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:546
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:617
+msgid "Vertical Thumbnails (Right)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:282
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:547
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:618
+msgid "Horizontal Slider (Bottom)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:283
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:548
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:619
+msgid "Modern Mosaic Grid"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:284
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:549
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:620
+msgid "Two-Column Grid"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:285
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:550
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:621
+msgid "Single Column Feed"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:292
+msgid "Aspect Ratio"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:293
+msgid "Set image container aspect ratio (e.g. 9:16 for Reels/Clothing)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:298
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:562
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:637
+msgid "4:5 Portrait (Standard Fashion)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:299
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:563
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:638
+msgid "1:1 Square (Modern eCommerce)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:300
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:564
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:639
+msgid "16:9 Landscape (Widescreen)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:301
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:565
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:640
+msgid "9:16 Vertical (Reels / TikTok Style)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:308
+msgid "Image Magnifier & Zoom"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:309
+msgid "Select zoom magnifier style or disable it for this product."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:314
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:577
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:656
+msgid "Inner Pan-Zoom"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:315
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:578
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:657
+msgid "Magnifying Glass Lens"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:316
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:579
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:658
+msgid "Side Preview Window"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:317
+msgid "Disable Zoom for this Product"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:324
+msgid "Video Placement in Gallery"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:325
+msgid "Position of the video item in relation to photos."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:329
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:544
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:561
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:576
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:615
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:636
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:655
+msgid "Default (Inherit Global Settings)"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:330
+msgid "1st - Play First Before Photos"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:331
+msgid "2nd - Follows Featured Image"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:332
+msgid "3rd - Middle Position"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:333
+msgid "Last - At the End"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:479
+msgid "Variation Video Showcase"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:487
+msgid "Self-Hosted MP4"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:491
+msgid "Video URL"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:499
+msgid "When customer selects this variation, the gallery automatically showcases this video."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:540
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:609
+msgid "Category Gallery Layout"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:552
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:623
+msgid "Products assigned to this category will automatically use this layout (unless individually overridden)."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:557
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:630
+msgid "Category Aspect Ratio"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:567
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:642
+msgid "Default aspect ratio for all products in this category."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:572
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:649
+msgid "Category Magnifier Zoom"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:580
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:659
+msgid "Disable Zoom for this Category"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:582
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/admin/class-wpvg-product-metabox.php:661
+msgid "Default zoom style for all products in this category."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/class-wpvg-loader.php:87
+msgid "Product Video Showcase for WooCommerce"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/class-wpvg-loader.php:88
+msgid "requires WooCommerce to be installed and active."
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:504
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:590
+msgid "Zoom image"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:520
+msgid "Scroll up"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:524
+msgid "Scroll left"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:534
+msgid "Video Thumbnail"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:545
+msgid "Scroll down"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:549
+msgid "Scroll right"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:581
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:621
+msgid "Previous"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:584
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:624
+msgid "Next"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:611
+msgid "Close"
+msgstr ""
+
+#: E:/xampp8.3/htdocs/test/wp-content/plugins/nexura-product-video-media-gallery-for-woocommerce/includes/frontend/class-wpvg-gallery.php:632
+msgid "Toggle Zoom"
+msgstr ""
+
+

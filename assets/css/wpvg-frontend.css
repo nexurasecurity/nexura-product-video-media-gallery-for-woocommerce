@@ -1,0 +1,1894 @@
+/**
+ * Nexura Product Video Media Gallery for WooCommerce - Frontend Styles
+ * Premium Pan-Zoom, Split Modal & Pattern Architecture
+ * High performance, transparent backdrop, zero third-party dependencies
+ *
+ * @package Product_Video_Showcase_For_WooCommerce
+ */
+
+:root {
+	--wpvg-primary: #2271b1;
+	--wpvg-primary-hover: #135e96;
+	--wpvg-border: #e2e8f0;
+	--wpvg-border-active: #2271b1;
+	--wpvg-radius: 8px;
+	--wpvg-bg-thumb: #f8fafc;
+	--wpvg-arrow-bg: rgba(255, 255, 255, 0.92);
+	--wpvg-arrow-color: #1e293b;
+	--wpvg-arrow-hover-bg: #ffffff;
+	--wpvg-thumbs-to-show: 4;
+	--wpvg-thumb-size: 72px;
+	--wpvg-thumb-gap: 8px;
+}
+
+/* ==========================================================================
+   1. Universal WooCommerce Theme Compatibility
+   ========================================================================== */
+/* Seamlessly adapt to any theme (Storefront, Astra, Flatsome, OceanWP, etc.) */
+.woocommerce div.product div.images.wpvg-gallery-wrapper,
+.wpvg-gallery-wrapper {
+	position: relative;
+	box-sizing: border-box;
+}
+
+.wpvg-gallery-container {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 25px;
+	user-select: none;
+	-webkit-user-select: none;
+	box-sizing: border-box;
+}
+
+.wpvg-gallery-container *,
+.wpvg-gallery-container *::before,
+.wpvg-gallery-container *::after {
+	box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. Carousel / Slider Layouts
+   ========================================================================== */
+
+/* Vertical Left (Thumbnails on Left) */
+.wpvg-layout-vertical-left {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	align-items: flex-start;
+}
+.wpvg-layout-vertical-left .wpvg-thumbnails-wrap {
+	width: var(--wpvg-thumb-size, 72px);
+	flex-shrink: 0;
+	order: 1;
+	display: flex;
+	flex-direction: column;
+}
+.wpvg-layout-vertical-left .wpvg-main-slider-wrap {
+	flex: 1;
+	min-width: 0;
+	order: 2;
+}
+
+/* Vertical Right (Thumbnails on Right) */
+.wpvg-layout-vertical-right {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	align-items: flex-start;
+}
+.wpvg-layout-vertical-right .wpvg-thumbnails-wrap {
+	width: var(--wpvg-thumb-size, 72px);
+	flex-shrink: 0;
+	order: 2;
+	display: flex;
+	flex-direction: column;
+}
+.wpvg-layout-vertical-right .wpvg-main-slider-wrap {
+	flex: 1;
+	min-width: 0;
+	order: 1;
+}
+
+/* Horizontal (Thumbnails at Bottom) */
+.wpvg-layout-horizontal {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.wpvg-layout-horizontal .wpvg-main-slider-wrap {
+	width: 100%;
+	order: 1;
+}
+.wpvg-layout-horizontal .wpvg-thumbnails-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	position: relative;
+	order: 2;
+}
+
+/* ==========================================================================
+   3. Main Slider Elements
+   ========================================================================== */
+.wpvg-main-slider-wrap {
+	position: relative;
+	background: #ffffff;
+	border-radius: var(--wpvg-radius);
+	overflow: hidden;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+	border: 1px solid var(--wpvg-border);
+}
+
+.wpvg-slider-stage {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	max-height: 620px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f8fafc;
+}
+
+.wpvg-gallery-container.wpvg-ratio-4-5 .wpvg-slider-stage {
+	aspect-ratio: 4 / 5;
+	max-height: 620px;
+}
+
+.wpvg-gallery-container.wpvg-ratio-1-1 .wpvg-slider-stage {
+	aspect-ratio: 1 / 1;
+	max-height: 580px;
+}
+
+.wpvg-gallery-container.wpvg-ratio-16-9 .wpvg-slider-stage {
+	aspect-ratio: 16 / 9;
+	max-height: 480px;
+}
+
+.wpvg-gallery-container.wpvg-ratio-9-16 .wpvg-slider-stage {
+	aspect-ratio: 9 / 16;
+	max-height: 720px;
+}
+
+.wpvg-slide-item {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	backface-visibility: hidden;
+}
+
+.wpvg-slide-item.wpvg-active-slide {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	z-index: 2;
+}
+
+.wpvg-slide-video {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	container-type: size;
+}
+
+.wpvg-slide-video iframe,
+.wpvg-slide-video video,
+.wpvg-native-video-iframe,
+.wpvg-video-facade,
+.wpvg-video-facade iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+	object-fit: contain;
+}
+
+.wpvg-slide-video iframe.wpvg-video-orient-vertical,
+.wpvg-slide-video video.wpvg-video-orient-vertical,
+.wpvg-native-video-iframe.wpvg-video-orient-vertical {
+	width: min(100%, 56.25cqh);
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+	display: block;
+}
+
+.wpvg-video-poster {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.wpvg-video-facade.is-loading .wpvg-video-play-btn {
+	opacity: 0.35;
+	pointer-events: none;
+}
+
+.wpvg-video-facade.is-loading .wpvg-video-poster {
+	display: block !important;
+}
+
+.wpvg-video-play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 68px;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(15, 23, 42, 0.82);
+	backdrop-filter: blur(6px);
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.38);
+	z-index: 12;
+	transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wpvg-slide-type-video.wpvg-active-slide ~ .wpvg-zoom-trigger,
+.wpvg-slider-stage:has(.wpvg-slide-type-video.wpvg-active-slide) .wpvg-zoom-trigger {
+	display: none !important;
+}
+
+.wpvg-video-facade:hover .wpvg-video-play-btn,
+.wpvg-video-play-btn:hover {
+	background: #2271b1;
+	border-color: #ffffff;
+	transform: translate(-50%, -50%) scale(1.12);
+	box-shadow: 0 10px 32px rgba(34, 113, 177, 0.5);
+}
+
+.wpvg-video-play-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 10px 0 10px 16px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.wpvg-video-facade.is-playing .wpvg-video-poster,
+.wpvg-video-facade.is-playing .wpvg-video-play-btn {
+	display: none;
+}
+
+/* Navigation Buttons (Prev / Next) */
+.wpvg-nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: var(--wpvg-arrow-bg);
+	color: var(--wpvg-arrow-color);
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+	backdrop-filter: blur(6px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 10;
+	transition: all 0.25s ease;
+	padding: 0;
+}
+
+.wpvg-nav-btn:hover {
+	background: var(--wpvg-arrow-hover-bg);
+	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.18);
+	transform: translateY(-50%) scale(1.06);
+}
+
+.wpvg-nav-prev {
+	left: 12px;
+}
+
+.wpvg-nav-next {
+	right: 12px;
+}
+
+.wpvg-nav-btn svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+/* Visible Zoom Trigger Button */
+.wpvg-zoom-trigger {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.95);
+	color: #1e293b;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 25;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	padding: 0;
+}
+
+.wpvg-zoom-trigger:hover {
+	background: #ffffff;
+	transform: scale(1.12);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.wpvg-zoom-trigger svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+/* ==========================================================================
+   4. Interactive Zoom Container (Hover + Click Support)
+   ========================================================================== */
+.wpvg-zoomable-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: zoom-in;
+}
+
+.wpvg-zoomable-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transform-origin: center center;
+	transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* When hover or click zoomed */
+.wpvg-zoomable-container.wpvg-is-zooming img,
+.wpvg-zoomable-container.wpvg-is-zoomed img {
+	transition: none !important;
+}
+
+.wpvg-zoomable-container.wpvg-is-zoomed {
+	cursor: zoom-out !important;
+}
+
+/* Lens Magnifier (Circle & Square) */
+.wpvg-zoom-lens {
+	position: absolute;
+	z-index: 35;
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.25);
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.15s ease, visibility 0.15s ease;
+	cursor: crosshair;
+}
+
+.wpvg-zoom-lens.wpvg-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.wpvg-zoom-lens.wpvg-shape-circle {
+	border-radius: 50%;
+}
+
+.wpvg-zoom-lens.wpvg-shape-square {
+	border-radius: 8px;
+}
+
+/* Amazon-Style Window Zoom Tracker on Main Image */
+.wpvg-zoom-tracker {
+	position: absolute;
+	z-index: 28;
+	background: rgba(255, 255, 255, 0.35);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.12s ease, visibility 0.12s ease;
+	cursor: crosshair;
+}
+
+.wpvg-zoom-tracker.wpvg-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Amazon-Style Floating Side Zoom Window */
+.wpvg-zoom-window {
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	overflow: hidden;
+	background-color: #ffffff;
+	border: 1px solid #e2e8f0;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18), 0 2px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.15s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.15s ease;
+}
+
+.wpvg-zoom-window.wpvg-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.wpvg-zoom-window.wpvg-pos-right {
+	left: calc(100% + 16px);
+}
+
+.wpvg-zoom-window.wpvg-pos-left {
+	right: calc(100% + 16px);
+}
+
+.wpvg-zoom-window img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: none !important;
+	max-height: none !important;
+	width: auto;
+	height: auto;
+	display: block;
+	pointer-events: none;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+/* ==========================================================================
+   5. Slider Thumbnail Strip
+   ========================================================================== */
+.wpvg-thumbnails-wrap {
+	position: relative;
+}
+
+.wpvg-thumbnails-scroll-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.wpvg-layout-vertical-left .wpvg-thumbnails-scroll-container,
+.wpvg-layout-vertical-right .wpvg-thumbnails-scroll-container {
+	width: var(--wpvg-thumb-size, 72px);
+	max-height: calc( (var(--wpvg-thumb-size, 72px) * var(--wpvg-thumbs-to-show, 4)) + (var(--wpvg-thumb-gap, 8px) * (var(--wpvg-thumbs-to-show, 4) - 1)) );
+}
+
+.wpvg-layout-horizontal .wpvg-thumbnails-scroll-container {
+	flex: 1;
+	min-width: 0;
+}
+
+.wpvg-thumbnails-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: var(--wpvg-thumb-gap, 8px);
+}
+
+.wpvg-layout-vertical-left .wpvg-thumbnails-list,
+.wpvg-layout-vertical-right .wpvg-thumbnails-list {
+	flex-direction: column;
+	max-height: calc( (var(--wpvg-thumb-size, 72px) * var(--wpvg-thumbs-to-show, 4)) + (var(--wpvg-thumb-gap, 8px) * (var(--wpvg-thumbs-to-show, 4) - 1)) );
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	scroll-behavior: smooth;
+}
+
+.wpvg-layout-vertical-left .wpvg-thumbnails-list::-webkit-scrollbar,
+.wpvg-layout-vertical-right .wpvg-thumbnails-list::-webkit-scrollbar {
+	display: none;
+}
+
+.wpvg-layout-horizontal .wpvg-thumbnails-list {
+	flex-direction: row;
+	overflow-x: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	scroll-behavior: smooth;
+}
+
+.wpvg-layout-horizontal .wpvg-thumbnails-list::-webkit-scrollbar {
+	display: none;
+}
+
+.wpvg-thumb-item {
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--wpvg-bg-thumb);
+	border: 2px solid transparent;
+	cursor: pointer;
+	flex-shrink: 0;
+	transition: all 0.2s ease;
+	aspect-ratio: 1 / 1;
+	box-sizing: border-box;
+}
+
+.wpvg-layout-vertical-left .wpvg-thumb-item,
+.wpvg-layout-vertical-right .wpvg-thumb-item {
+	width: var(--wpvg-thumb-size, 72px);
+	height: var(--wpvg-thumb-size, 72px);
+	flex: 0 0 var(--wpvg-thumb-size, 72px);
+}
+
+.wpvg-layout-horizontal .wpvg-thumb-item {
+	flex: 0 0 calc( (100% - (var(--wpvg-thumb-gap, 8px) * (var(--wpvg-thumbs-to-show, 4) - 1))) / var(--wpvg-thumbs-to-show, 4) );
+	width: calc( (100% - (var(--wpvg-thumb-gap, 8px) * (var(--wpvg-thumbs-to-show, 4) - 1))) / var(--wpvg-thumbs-to-show, 4) );
+	height: auto;
+}
+
+.wpvg-thumb-item:hover {
+	opacity: 0.85;
+	border-color: #94a3b8;
+}
+
+.wpvg-thumb-item.wpvg-active-thumb {
+	border-color: var(--wpvg-border-active);
+	box-shadow: 0 0 0 1px var(--wpvg-border-active);
+	opacity: 1;
+}
+
+.wpvg-thumb-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	display: block;
+}
+
+/*
+ * YouTube Shorts thumbs often include gray Shorts chrome at the bottom.
+ * Crop hard to the upper video frame so the tile matches product photos.
+ */
+.wpvg-thumb-item.wpvg-thumb-vertical {
+	background: #0f172a;
+}
+
+.wpvg-thumb-item.wpvg-thumb-vertical img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 18%;
+	transform: scale(2.1);
+	transform-origin: center 22%;
+}
+
+.wpvg-thumb-video-badge {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.28);
+	transition: background 0.2s ease;
+	z-index: 1;
+}
+
+.wpvg-thumb-item:hover .wpvg-thumb-video-badge {
+	background: rgba(0, 0, 0, 0.42);
+}
+
+.wpvg-thumb-video-badge svg {
+	width: 26px;
+	height: 26px;
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.wpvg-thumb-scroll-btn {
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid var(--wpvg-border);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #64748b;
+	transition: all 0.2s ease;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wpvg-layout-vertical-left .wpvg-thumb-scroll-btn,
+.wpvg-layout-vertical-right .wpvg-thumb-scroll-btn {
+	width: 100%;
+	height: 22px;
+}
+
+.wpvg-layout-horizontal .wpvg-thumb-scroll-btn {
+	width: 26px;
+	height: 38px;
+	flex-shrink: 0;
+}
+
+.wpvg-thumb-scroll-btn:hover {
+	color: var(--wpvg-primary);
+	background: #ffffff;
+	border-color: #cbd5e1;
+}
+
+.wpvg-thumb-scroll-btn:disabled,
+.wpvg-thumb-scroll-btn.wpvg-disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.wpvg-thumb-scroll-up {
+	margin-bottom: 4px;
+}
+
+.wpvg-thumb-scroll-down {
+	margin-top: 4px;
+}
+
+.wpvg-thumb-scroll-btn svg {
+	width: 14px;
+	height: 14px;
+	fill: currentColor;
+}
+
+.wpvg-mobile-dots {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 0 4px;
+}
+
+.wpvg-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #cbd5e1;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.wpvg-dot.wpvg-active-dot {
+	background: var(--wpvg-primary);
+	width: 20px;
+	border-radius: 4px;
+}
+
+/* ==========================================================================
+   6. On-Page Modern Grid Layouts (Mosaic 2-1-2-1, 2-Col, 1-Col)
+   ========================================================================== */
+.wpvg-gallery-grid {
+	width: 100%;
+}
+
+.wpvg-grid-item {
+	position: relative;
+	background: #ffffff;
+	border-radius: var(--wpvg-radius);
+	overflow: hidden;
+	border: 1px solid var(--wpvg-border);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wpvg-grid-item:hover {
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.wpvg-grid-item .wpvg-zoomable-container {
+	width: 100%;
+	height: 100%;
+}
+
+.wpvg-grid-video-wrap {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wpvg-grid-video-wrap iframe,
+.wpvg-grid-video-wrap video {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
+
+/* 6A. On-Page Mosaic Pattern (2 - 1 - 2 - 1 Alternating) */
+.wpvg-grid-mosaic {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+}
+
+.wpvg-grid-mosaic .wpvg-grid-item:nth-child(3n) {
+	grid-column: span 2;
+	aspect-ratio: 16 / 11;
+}
+
+.wpvg-grid-mosaic .wpvg-grid-item:nth-child(3n-1),
+.wpvg-grid-mosaic .wpvg-grid-item:nth-child(3n-2) {
+	grid-column: span 1;
+	aspect-ratio: 1 / 1;
+}
+
+/* 6B. On-Page 2-Column Grid Layout */
+.wpvg-grid-2col {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+}
+
+.wpvg-grid-2col .wpvg-grid-hero {
+	grid-column: span 2;
+	aspect-ratio: 16 / 11;
+}
+
+.wpvg-grid-2col .wpvg-grid-item:not(.wpvg-grid-hero) {
+	grid-column: span 1;
+	aspect-ratio: 1 / 1;
+}
+
+/* 6C. On-Page 1-Column Stacked Grid Layout */
+.wpvg-grid-1col {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.wpvg-grid-1col .wpvg-grid-item {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+}
+
+/* ==========================================================================
+   7. Fullscreen Split Lightbox Modal (Transparent Blurred Backdrop)
+   ========================================================================== */
+.wpvg-lightbox-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 9999999;
+	background: rgba(0, 0, 0, 0.74); /* Uniform dark transparent backdrop showing dimmed page */
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	display: flex;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.wpvg-lightbox-modal.wpvg-modal-open {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Fixed Round White Close Button (Top Right) */
+.wpvg-modal-close-btn {
+	position: fixed;
+	top: 18px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #ffffff;
+	border: 0;
+	color: #111827;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 10000000;
+	transition: transform 0.15s ease, background 0.15s ease;
+	padding: 0;
+}
+
+.wpvg-modal-close-btn:hover {
+	background: #f4f4f5;
+	transform: scale(1.08);
+}
+
+.wpvg-modal-close-btn svg {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+.wpvg-modal-inner {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* Position: Right Side Panel (Default) */
+.wpvg-modal-pos-right .wpvg-modal-main {
+	order: 1;
+}
+.wpvg-modal-pos-right .wpvg-modal-sidebar {
+	order: 2;
+}
+
+/* Position: Left Side Panel */
+.wpvg-modal-pos-left .wpvg-modal-sidebar {
+	order: 1;
+}
+.wpvg-modal-pos-left .wpvg-modal-main {
+	order: 2;
+}
+
+/* ==========================================================================
+   Card-Style Lightbox Modal (Centered White Card, Bold Chevrons, Bottom Thumbs)
+   ========================================================================== */
+.wpvg-lightbox-modal.wpvg-modal-card,
+.wpvg-lightbox-modal.wpvg-modal-pos-bottom {
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 24px !important;
+	box-sizing: border-box !important;
+	background: rgba(0, 0, 0, 0.65) !important;
+	backdrop-filter: blur(4px) !important;
+	-webkit-backdrop-filter: blur(4px) !important;
+}
+
+/* Centered White Card */
+.wpvg-modal-card .wpvg-modal-inner,
+.wpvg-modal-pos-bottom .wpvg-modal-inner {
+	width: 88vw !important;
+	max-width: 960px !important;
+	height: 84vh !important;
+	max-height: 750px !important;
+	background: #ffffff !important;
+	border-radius: 12px !important;
+	box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45) !important;
+	position: relative !important;
+	display: flex !important;
+	flex-direction: column !important;
+	overflow: hidden !important;
+	margin: auto !important;
+	animation: wpvgCardPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes wpvgCardPopIn {
+	from {
+		opacity: 0;
+		transform: scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* Top-Right Circular Black Close Button */
+.wpvg-modal-card .wpvg-modal-close-btn,
+.wpvg-modal-pos-bottom .wpvg-modal-close-btn {
+	position: absolute !important;
+	top: 14px !important;
+	right: 14px !important;
+	width: 36px !important;
+	height: 36px !important;
+	border-radius: 50% !important;
+	background: #000000 !important;
+	border: none !important;
+	color: #ffffff !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	cursor: pointer !important;
+	z-index: 100 !important;
+	padding: 0 !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+	transition: transform 0.15s ease, background 0.15s ease !important;
+	outline: none !important;
+}
+
+.wpvg-modal-card .wpvg-modal-close-btn:hover,
+.wpvg-modal-pos-bottom .wpvg-modal-close-btn:hover {
+	background: #222222 !important;
+	transform: scale(1.08) !important;
+}
+
+.wpvg-modal-card .wpvg-modal-close-btn svg,
+.wpvg-modal-pos-bottom .wpvg-modal-close-btn svg {
+	width: 18px !important;
+	height: 18px !important;
+	stroke: #ffffff !important;
+	fill: none !important;
+}
+
+/* Main Canvas Area */
+.wpvg-modal-card .wpvg-modal-main,
+.wpvg-modal-pos-bottom .wpvg-modal-main {
+	order: 1 !important;
+	flex: 1 1 auto !important;
+	min-height: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+	position: relative !important;
+	background: #ffffff !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 24px 60px 10px !important;
+	box-sizing: border-box !important;
+	overflow: hidden !important;
+}
+
+/* Bold Black Chevrons on Left and Right */
+.wpvg-modal-card .wpvg-modal-nav-btn,
+.wpvg-modal-pos-bottom .wpvg-modal-nav-btn {
+	position: absolute !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+	width: 48px !important;
+	height: 48px !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	color: #000000 !important;
+	box-shadow: none !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	cursor: pointer !important;
+	z-index: 40 !important;
+	padding: 0 !important;
+	outline: none !important;
+	transition: transform 0.2s ease, opacity 0.2s ease !important;
+}
+
+.wpvg-modal-card .wpvg-modal-nav-btn:hover,
+.wpvg-modal-pos-bottom .wpvg-modal-nav-btn:hover {
+	background: transparent !important;
+	box-shadow: none !important;
+	transform: translateY(-50%) scale(1.12) !important;
+	opacity: 0.7 !important;
+}
+
+.wpvg-modal-card .wpvg-modal-prev,
+.wpvg-modal-pos-bottom .wpvg-modal-prev {
+	left: 14px !important;
+}
+
+.wpvg-modal-card .wpvg-modal-next,
+.wpvg-modal-pos-bottom .wpvg-modal-next {
+	right: 14px !important;
+}
+
+.wpvg-modal-card .wpvg-modal-nav-btn svg,
+.wpvg-modal-pos-bottom .wpvg-modal-nav-btn svg {
+	width: 34px !important;
+	height: 34px !important;
+	stroke: #000000 !important;
+	fill: none !important;
+}
+
+/* Modal Stage and Image */
+.wpvg-modal-card .wpvg-modal-stage,
+.wpvg-modal-pos-bottom .wpvg-modal-stage {
+	width: 100% !important;
+	height: 100% !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	overflow: hidden !important;
+	background: #ffffff !important;
+}
+
+.wpvg-modal-card .wpvg-modal-zoom-container,
+.wpvg-modal-pos-bottom .wpvg-modal-zoom-container {
+	width: 100% !important;
+	height: 100% !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	position: relative !important;
+	overflow: hidden !important;
+	background: #ffffff !important;
+	cursor: zoom-in;
+}
+
+.wpvg-modal-card .wpvg-modal-zoom-container img,
+.wpvg-modal-pos-bottom .wpvg-modal-zoom-container img {
+	max-width: 100% !important;
+	max-height: 100% !important;
+	object-fit: contain !important;
+	display: block !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+.wpvg-modal-card .wpvg-modal-zoom-container .wpvg-zoom-trigger,
+.wpvg-modal-pos-bottom .wpvg-modal-zoom-container .wpvg-zoom-trigger {
+	display: none !important;
+}
+
+/* Bottom Horizontal Thumbnails Strip */
+.wpvg-modal-card .wpvg-modal-sidebar,
+.wpvg-modal-pos-bottom .wpvg-modal-sidebar {
+	order: 2 !important;
+	width: 100% !important;
+	flex: 0 0 auto !important;
+	height: auto !important;
+	min-height: unset !important;
+	max-height: unset !important;
+	background: #ffffff !important;
+	border: none !important;
+	border-top: none !important;
+	backdrop-filter: none !important;
+	-webkit-backdrop-filter: none !important;
+	padding: 6px 16px 18px !important;
+	box-sizing: border-box !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	z-index: 20 !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumbs-scroll,
+.wpvg-modal-pos-bottom .wpvg-modal-thumbs-scroll {
+	flex: 1 !important;
+	width: 100% !important;
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 4px 0 !important;
+	scrollbar-width: thin !important;
+	scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumbs-scroll::-webkit-scrollbar,
+.wpvg-modal-pos-bottom .wpvg-modal-thumbs-scroll::-webkit-scrollbar {
+	height: 4px !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumbs-scroll::-webkit-scrollbar-thumb,
+.wpvg-modal-pos-bottom .wpvg-modal-thumbs-scroll::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2) !important;
+	border-radius: 4px !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumbs-grid,
+.wpvg-modal-pos-bottom .wpvg-modal-thumbs-grid {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 8px !important;
+	margin: 0 auto !important;
+	width: max-content !important;
+	height: auto !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumb-item,
+.wpvg-modal-pos-bottom .wpvg-modal-thumb-item {
+	width: var(--wpvg-modal-thumb-size, 48px) !important;
+	height: var(--wpvg-modal-thumb-size, 48px) !important;
+	min-width: var(--wpvg-modal-thumb-size, 48px) !important;
+	max-width: var(--wpvg-modal-thumb-size, 48px) !important;
+	aspect-ratio: 1 / 1 !important;
+	flex: 0 0 var(--wpvg-modal-thumb-size, 48px) !important;
+	border-radius: 4px !important;
+	border: 1px solid #dcdfe4 !important;
+	background: #ffffff !important;
+	box-shadow: none !important;
+	cursor: pointer !important;
+	padding: 2px !important;
+	box-sizing: border-box !important;
+	overflow: hidden !important;
+	opacity: 0.85 !important;
+	transition: opacity 0.15s ease, border-color 0.15s ease, transform 0.15s ease !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumb-item:hover,
+.wpvg-modal-pos-bottom .wpvg-modal-thumb-item:hover {
+	opacity: 1 !important;
+	border-color: #94a3b8 !important;
+	transform: none !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumb-item.wpvg-active-modal-thumb,
+.wpvg-modal-pos-bottom .wpvg-modal-thumb-item.wpvg-active-modal-thumb {
+	opacity: 1 !important;
+	border: 1.5px solid #000000 !important;
+	box-shadow: none !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumb-item img,
+.wpvg-modal-pos-bottom .wpvg-modal-thumb-item img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	display: block !important;
+}
+
+.wpvg-modal-card .wpvg-modal-thumb-item.wpvg-thumb-vertical img,
+.wpvg-modal-pos-bottom .wpvg-modal-thumb-item.wpvg-thumb-vertical img,
+.wpvg-modal-thumb-item.wpvg-thumb-vertical img {
+	object-fit: cover !important;
+	object-position: center 18% !important;
+	transform: scale(2.1) !important;
+	transform-origin: center 22% !important;
+}
+
+/* Mobile Responsiveness for Card Modal */
+@media (max-width: 640px) {
+	.wpvg-lightbox-modal.wpvg-modal-card,
+	.wpvg-lightbox-modal.wpvg-modal-pos-bottom {
+		padding: 10px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-inner,
+	.wpvg-modal-pos-bottom .wpvg-modal-inner {
+		width: 95vw !important;
+		max-width: 95vw !important;
+		height: 88vh !important;
+		max-height: 88vh !important;
+		border-radius: 10px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-main,
+	.wpvg-modal-pos-bottom .wpvg-modal-main {
+		padding: 16px 36px 6px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-close-btn,
+	.wpvg-modal-pos-bottom .wpvg-modal-close-btn {
+		width: 32px !important;
+		height: 32px !important;
+		top: 10px !important;
+		right: 10px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-close-btn svg,
+	.wpvg-modal-pos-bottom .wpvg-modal-close-btn svg {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-nav-btn,
+	.wpvg-modal-pos-bottom .wpvg-modal-nav-btn {
+		width: 36px !important;
+		height: 36px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-nav-btn svg,
+	.wpvg-modal-pos-bottom .wpvg-modal-nav-btn svg {
+		width: 26px !important;
+		height: 26px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-prev,
+	.wpvg-modal-pos-bottom .wpvg-modal-prev {
+		left: 6px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-next,
+	.wpvg-modal-pos-bottom .wpvg-modal-next {
+		right: 6px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-sidebar,
+	.wpvg-modal-pos-bottom .wpvg-modal-sidebar {
+		padding: 4px 8px 12px !important;
+	}
+	.wpvg-modal-card .wpvg-modal-thumb-item,
+	.wpvg-modal-pos-bottom .wpvg-modal-thumb-item {
+		width: clamp(28px, calc(var(--wpvg-modal-thumb-size, 48px) * 0.85), 60px) !important;
+		height: clamp(28px, calc(var(--wpvg-modal-thumb-size, 48px) * 0.85), 60px) !important;
+		min-width: clamp(28px, calc(var(--wpvg-modal-thumb-size, 48px) * 0.85), 60px) !important;
+		max-width: clamp(28px, calc(var(--wpvg-modal-thumb-size, 48px) * 0.85), 60px) !important;
+		flex: 0 0 clamp(28px, calc(var(--wpvg-modal-thumb-size, 48px) * 0.85), 60px) !important;
+	}
+}
+
+/* 7A. Main Canvas Area (Center Floating Image) */
+.wpvg-modal-main {
+	flex: 1;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding: 20px 40px;
+}
+
+.wpvg-modal-nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #ffffff;
+	border: 0;
+	color: #18181b;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 40;
+	transition: all 0.2s ease;
+	padding: 0;
+}
+
+.wpvg-modal-nav-btn:hover {
+	background: #ffffff;
+	transform: translateY(-50%) scale(1.1);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.wpvg-modal-prev {
+	left: 28px;
+}
+
+.wpvg-modal-next {
+	right: 28px;
+}
+
+.wpvg-modal-nav-btn svg {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}
+
+.wpvg-modal-stage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.wpvg-modal-zoom-container {
+	position: relative;
+	max-width: 90%;
+	max-height: 94vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: none;
+	border-radius: 0;
+	cursor: zoom-in;
+}
+
+.wpvg-modal-zoom-container.wpvg-is-zoomed {
+	cursor: zoom-out !important;
+}
+
+.wpvg-modal-zoom-container img {
+	max-width: 100%;
+	max-height: 94vh;
+	object-fit: contain;
+	display: block;
+	transform-origin: center center;
+	transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	border-radius: 4px;
+	box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
+
+.wpvg-modal-zoom-container.wpvg-is-zooming img,
+.wpvg-modal-zoom-container.wpvg-is-zoomed img {
+	transition: none !important;
+}
+
+.wpvg-modal-video {
+	width: 80vw;
+	max-width: 960px;
+	aspect-ratio: 16 / 9;
+	background: #000000;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wpvg-modal-video:has(.wpvg-video-orient-vertical),
+.wpvg-modal-video.wpvg-modal-video-vertical {
+	width: min(420px, 92vw);
+	max-width: 420px;
+	aspect-ratio: 9 / 16;
+	max-height: 85vh;
+}
+
+.wpvg-modal-video iframe,
+.wpvg-modal-video video,
+.wpvg-modal-video .wpvg-video-facade {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	display: block;
+}
+
+.wpvg-modal-video .wpvg-video-facade.wpvg-video-orient-vertical {
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	aspect-ratio: auto;
+}
+
+/* 7B. Transparent Right Side Panel with Patterned Photos Grid */
+.wpvg-modal-sidebar {
+	width: 360px;
+	background: transparent !important; /* Fully transparent so page content peeks through */
+	border: none !important;
+	display: flex;
+	flex-direction: column;
+	z-index: 20;
+	flex-shrink: 0;
+	height: 100vh;
+}
+
+.wpvg-modal-thumbs-scroll {
+	flex: 1;
+	overflow-y: auto;
+	padding: 68px 18px 40px 12px; /* Top space for close button */
+	scrollbar-width: thin;
+	scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+}
+
+.wpvg-modal-thumbs-scroll::-webkit-scrollbar {
+	width: 6px;
+}
+
+.wpvg-modal-thumbs-scroll::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.28);
+	border-radius: 4px;
+}
+
+.wpvg-modal-thumbs-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	width: 100%;
+}
+
+.wpvg-modal-thumb-item {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+	opacity: 0.88;
+	box-sizing: border-box;
+}
+
+.wpvg-modal-thumb-item:hover {
+	opacity: 1;
+	transform: scale(1.02);
+}
+
+/* Active photo indicator: Crisp 100% white border with dark backing */
+.wpvg-modal-thumb-item.wpvg-active-modal-thumb {
+	opacity: 1 !important;
+	border-color: #ffffff !important;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.wpvg-modal-thumb-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.wpvg-modal-video-badge {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.wpvg-modal-video-badge svg {
+	width: 24px;
+	height: 24px;
+}
+
+/* ==========================================================================
+   8. Specific Photo Pattern Rules (100% Pixel Exact)
+   ========================================================================== */
+
+/* 8A. Pattern: Alternating Mosaic (Row 1: 2 square photos | Row 2: 1 full-width photo | Row 3: 2 square photos...) */
+.wpvg-pattern-mosaic_2_1 .wpvg-modal-thumb-item:nth-child(3n) {
+	grid-column: span 2;
+	aspect-ratio: 16 / 11;
+}
+.wpvg-pattern-mosaic_2_1 .wpvg-modal-thumb-item:nth-child(3n-1),
+.wpvg-pattern-mosaic_2_1 .wpvg-modal-thumb-item:nth-child(3n-2) {
+	grid-column: span 1;
+	aspect-ratio: 1 / 1;
+}
+
+/* 8B. Pattern: 2-Column Grid (2 - 2 - 2) */
+.wpvg-pattern-grid_2col .wpvg-modal-thumb-item {
+	grid-column: span 1;
+	aspect-ratio: 1 / 1;
+}
+
+/* 8C. Pattern: 1-Column Stacked (1 - 1 - 1) */
+.wpvg-pattern-grid_1col .wpvg-modal-thumbs-grid {
+	grid-template-columns: 1fr !important;
+}
+.wpvg-pattern-grid_1col .wpvg-modal-thumb-item {
+	grid-column: span 1;
+	aspect-ratio: 4 / 3;
+}
+
+/* 8D. Pattern: Hero Top + 2-Column (1 - 2 - 2) */
+.wpvg-pattern-hero_2col .wpvg-modal-thumb-item:first-child {
+	grid-column: span 2;
+	aspect-ratio: 16 / 11;
+}
+.wpvg-pattern-hero_2col .wpvg-modal-thumb-item:not(:first-child) {
+	grid-column: span 1;
+	aspect-ratio: 1 / 1;
+}
+
+/* Mobile layout rules are printed from the Responsive breakpoint setting so a custom breakpoint is honored. */
+
+/* ==========================================================================
+   9. Shop Archive & Product Listing Video Showcase [PRO]
+   ========================================================================== */
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product,
+.wc-block-grid__product {
+	position: relative;
+}
+
+/* Base Archive Video Container & Thumbnail Wrapper */
+.wpvg-archive-thumb-wrap {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	line-height: 0;
+	border-radius: inherit;
+	margin-bottom: 0.5em;
+}
+
+.wpvg-archive-thumb-wrap img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 !important;
+}
+
+.wpvg-archive-card-video {
+	box-sizing: border-box;
+	line-height: normal;
+}
+
+/* Product title and price stay visible and properly structured */
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product .price,
+.woocommerce-page ul.products li.product .price {
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+
+/* Style 1: Autoplay on Hover */
+.wpvg-archive-style-hover-autoplay {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.28s ease, visibility 0.28s ease;
+	z-index: 100;
+	background: #000;
+	border-radius: inherit;
+	overflow: hidden;
+}
+
+/* Reveal when parent product link, card, or thumb wrapper is hovered */
+li.product:hover .wpvg-archive-style-hover-autoplay,
+.wc-block-grid__product:hover .wpvg-archive-style-hover-autoplay,
+.wpvg-archive-thumb-wrap:hover .wpvg-archive-style-hover-autoplay,
+.wpvg-archive-style-hover-autoplay.wpvg-hovered {
+	opacity: 1;
+	visibility: visible;
+}
+
+.wpvg-archive-video-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.wpvg-archive-video-item {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.wpvg-archive-video-item.wpvg-active {
+	display: flex;
+}
+
+.wpvg-archive-hover-video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.wpvg-archive-video-item iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.wpvg-archive-hover-badge {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: rgba(15, 23, 42, 0.75);
+	backdrop-filter: blur(6px);
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	letter-spacing: 0.3px;
+	pointer-events: none;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	z-index: 6;
+}
+
+/* Style 2: Floating Play Badge with Pulse */
+.wpvg-archive-style-click-popup {
+	position: absolute;
+	z-index: 100;
+	pointer-events: auto;
+}
+
+.wpvg-archive-style-click-popup.wpvg-badge-pos-bottom_right {
+	bottom: 12px;
+	right: 12px;
+}
+.wpvg-archive-style-click-popup.wpvg-badge-pos-bottom_left {
+	bottom: 12px;
+	left: 12px;
+}
+.wpvg-archive-style-click-popup.wpvg-badge-pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.wpvg-archive-style-click-popup.wpvg-badge-pos-top_right {
+	top: 12px;
+	right: 12px;
+}
+
+.wpvg-archive-play-badge {
+	position: relative;
+	background: rgba(15, 23, 42, 0.85);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	color: #ffffff;
+	padding: 7px 14px;
+	border-radius: 24px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+	transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+	text-decoration: none;
+	outline: none;
+}
+
+.wpvg-archive-play-badge:hover {
+	background: #2271b1;
+	border-color: #38bdf8;
+	color: #ffffff;
+	transform: scale(1.06);
+	box-shadow: 0 6px 20px rgba(34, 113, 177, 0.45);
+}
+
+.wpvg-badge-pulse {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: rgba(34, 113, 177, 0.4);
+	top: 0;
+	left: 0;
+	z-index: -1;
+	animation: wpvgPulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes wpvgPulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	70% {
+		transform: scale(1.15, 1.25);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.15, 1.25);
+		opacity: 0;
+	}
+}
+
+.wpvg-badge-icon {
+	width: 16px;
+	height: 16px;
+	display: block;
+	flex-shrink: 0;
+}
+
+/* Style 3: Inline Video Card in Grid */
+.wpvg-archive-style-inline-player {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: #000;
+	border-radius: inherit;
+	overflow: hidden;
+}
+
+.wpvg-archive-style-inline-player .wpvg-video-facade {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: auto;
+}
+
+.wpvg-archive-style-inline-player .wpvg-video-facade .wpvg-video-poster,
+.wpvg-archive-style-inline-player .wpvg-video-facade iframe,
+.wpvg-archive-style-inline-player iframe,
+.wpvg-archive-style-inline-player video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	max-width: 100% !important;
+	transform: none !important;
+	object-fit: cover;
+	border: 0;
+}
+
+.wpvg-archive-style-inline-player .wpvg-video-play-btn {
+	z-index: 102;
+}
+
+/* Multi-Video Navigation Dots (Styles 1, 2, 3) */
+.wpvg-archive-nav-dots {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: rgba(15, 23, 42, 0.65);
+	backdrop-filter: blur(4px);
+	padding: 4px 8px;
+	border-radius: 12px;
+	z-index: 105;
+}
+
+.wpvg-archive-dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.wpvg-archive-dot.active,
+.wpvg-archive-dot:hover {
+	background: #38bdf8;
+	transform: scale(1.3);
+}
+
+/* Quick Catalog Video Lightbox Modal */
+.wpvg-archive-modal {
+	position: fixed !important;
+	inset: 0 !important;
+	z-index: 99999999 !important;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.wpvg-archive-modal[style*="display: block"],
+.wpvg-archive-modal.wpvg-active,
+.wpvg-archive-modal:not([style*="display: none"]) {
+	display: flex !important;
+}
+
+.wpvg-archive-modal-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(15, 23, 42, 0.85);
+	backdrop-filter: blur(8px);
+	cursor: pointer;
+}
+
+.wpvg-archive-modal-dialog {
+	position: relative;
+	width: 100%;
+	max-width: 720px;
+	background: #0f172a;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 14px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+	z-index: 2;
+	animation: wpvgModalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes wpvgModalPop {
+	0% {
+		opacity: 0;
+		transform: scale(0.94);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.wpvg-archive-modal-close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.15);
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.2s ease;
+}
+
+.wpvg-archive-modal-close:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.wpvg-archive-modal-player-wrap {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #000;
+}
+
+.wpvg-archive-modal-player {
+	width: 100%;
+	height: 100%;
+}
+
+.wpvg-archive-modal-player iframe,
+.wpvg-archive-modal-player video {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+.wpvg-archive-modal-dots {
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-flex;
+	gap: 6px;
+	z-index: 5;
+}
+
+.wpvg-archive-modal-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 20px;
+	background: #1e293b;
+	gap: 12px;
+}
+
+.wpvg-archive-modal-title {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #f8fafc;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.wpvg-archive-modal-btn {
+	background: #2271b1 !important;
+	color: #ffffff !important;
+	border: none !important;
+	padding: 8px 16px !important;
+	border-radius: 6px !important;
+	font-weight: 600 !important;
+	font-size: 13px !important;
+	text-decoration: none !important;
+	white-space: nowrap;
+	transition: background 0.2s ease;
+}
+
+.wpvg-archive-modal-btn:hover {
+	background: #135e96 !important;
+}
